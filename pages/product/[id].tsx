@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { stripe } from "@/lib/stripe";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { ImageContainer, ProductContainer, ProductDetails } from "../product";
+import { ImageContainer, ProductContainer, ProductDetails } from "../../styles/pages/product";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
