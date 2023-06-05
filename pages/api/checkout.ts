@@ -7,7 +7,7 @@ export default async function handler(
 ) {
   const { priceId } = req.body;
   const cancelUrl = `${process.env.NEXT_URL}/`;
-  const successUrl = `${process.env.NEXT_URL}/success`;
+  const successUrl = `${process.env.NEXT_URL}/success?session_id={CHECKOUT_SESSION_ID}`;
 
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed." });
